@@ -1,0 +1,289 @@
+// @media screen and(max-width: 1024px) {
+//   .banner {
+//     .img {
+//       img {
+//         top: 150px;
+//         right: 0;
+//       }
+//     }
+//   }
+//    .card-rate {
+//     top: 800px;
+//     right: 50px;
+//   }
+// }
+@media screen and(max-width: 950px) {
+  .card-rate {
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and(max-width: 800px) {
+  .head {
+    padding-left: 50px;
+    padding-right: 50px;
+    position: fixed;
+    background: #50344d;
+    top: 0;
+    z-index: 20;
+    min-height: 15vh;
+    nav {
+      .nav-links {
+        position: absolute;
+        top: -1000px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        flex-flow: column;
+        width: 100%;
+        height: 50vh;
+        background: #50344d;
+        color: #ffffff;
+        animation: navend 0.5s linear;
+        .nav-link {
+          color: #ffffff;
+        }
+      }
+      .btn {
+        flex: 0.5;
+      }
+      .nav-mobile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: column;
+        animation: navbegin 0.3s linear;
+        position: fixed;
+        top: 5rem;
+        height: 50vh;
+        width: 100%;
+        padding: 0;
+        // top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+      }
+    }
+    .hamburger {
+      display: flex;
+      justify-content: right;
+      align-items: flex-end;
+      z-index: 100;
+      .cancel-view {
+        display: block;
+      }
+    }
+  }
+  .banner {
+    min-height: 100vh;
+    .introduction {
+      .text {
+        z-index: 5;
+        .head-title {
+          h1 {
+            font-size: 30px;
+          }
+        }
+        p {
+          font-size: 10px;
+        }
+      }
+      .btn-group {
+        .btn1 {
+          width: 80px;
+          height: 30px;
+          font-size: 10px;
+        }
+        .btn2 {
+          width: 100px;
+          height: 40px;
+          font-size: 10px;
+        }
+      }
+    }
+    .img {
+      img {
+        top: 170px;
+        right: 10px;
+      }
+    }
+  }
+}
+// @media screen and(max-width: 768px) {
+//   .banner {
+//     .img {
+//       img {
+//         top: 300px;
+//         right: 0;
+//       }
+//     }
+//   }
+// }
+@media screen and(max-width: 550px) {
+  .banner {
+    .img {
+      display: none;
+      img {
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+  .foot {
+    .links {
+      .community,
+      .company {
+        display: none;
+      }
+    }
+    .credit {
+      .navigations-links {
+        display: none;
+      }
+    }
+  }
+  .top-rated {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .freelancers {
+    padding: 0;
+    .collection {
+      .card {
+        width: 300px;
+      }
+    }
+  }
+}
+@media screen and(max-width: 500px) {
+  .card-rate {
+    display: none;
+  }
+  .tips {
+    .text {
+      .title {
+        h1 {
+          font-size: 30px;
+          img {
+            width: 10%;
+            height: 10%;
+          }
+        }
+      }
+      .paragraph {
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .testimonials {
+    .title {
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+  .find-freelo {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    .freelo {
+      .title {
+        h1 {
+          font-size: 30px;
+          .img {
+            img {
+              width: 20%;
+              height: 20%;
+            }
+          }
+        }
+        margin-bottom: 50px;
+      }
+      .para {
+        margin-bottom: 50px;
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 460px) {
+  .foot {
+    .signing-up {
+      .input {
+        input {
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width: 400px) {
+  .tips {
+    .card-tips {
+      .img {
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+    .text {
+      h1 {
+        font: 3px;
+        img {
+          width: 10%;
+          height: 10%;
+        }
+      }
+      .btn-group {
+        .btn {
+          width: 200px;
+          height: 50px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .testimonials {
+    .contents {
+      .round {
+        min-width: 300px;
+        min-height: 300px;
+        .card {
+          height: 200px;
+          width: 3000px;
+          .avatar {
+            .img {
+              img {
+                height: 50%;
+                width: 50%;
+              }
+            }
+          }
+          .user {
+            min-height: 5vh;
+            .rating {
+              width: 80%;
+              .the-star {
+                width: 30px;
+                height: 10px;
+              }
+            }
+          }
+          .text {
+            h4 {
+              line-height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

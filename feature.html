@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="./src/font-awesome-4.7.0/css/font-awesome.css"
+    />
+    <title>Featured | Freelo</title>
+    <style>
+      .banner {
+        min-height: 30vh;
+      }
+      .top-rated,
+      .freelancers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-flow: column;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      .text > .heading {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #fae5f7;
+      }
+      td {
+        cursor: pointer;
+      }
+      .free {
+        transition: 0.3s linear;
+      }
+      .free:hover {
+        background: #ffc8c8;
+      }
+      .collection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        min-height: 200vh;
+      }
+      .card {
+        width: 500px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: column;
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        padding: 40px;
+        min-height: 30vh;
+      }
+      .card-img > img {
+        width: 50%;
+        height: 50%;
+      }
+      .card-img {
+        display: flex;
+
+        justify-content: space-around;
+        align-items: center;
+      }
+      .text > .user > span {
+        color: #838080;
+      }
+      .text > .user {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        min-height: 20vh;
+      }
+      .btns {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+      }
+      .btns > .btn {
+        width: 150px;
+        height: 50px;
+      }
+      .view {
+        background: #50344d;
+        color: #ffffff;
+        border: none;
+      }
+      .me {
+        border: 1px solid #838080;
+        background: transparent;
+      }
+      .view-more {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        min-height: 30vh;
+      }
+      a {
+        color: teal;
+      }
+    </style>
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <style>
+      .banner {
+        min-height: 30vh;
+      }
+
+      .text > .heading {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      a {
+        color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ======================
+    ========= HEAD SECTION ========= 
+            ====================== -->
+    <header class="head">
+      <nav>
+        <div id="logo">
+          <h4>Freelo</h4>
+        </div>
+        <ul class="nav-links">
+          <a href="#" class="nav-link active"><li>Feature</li></a>
+          <a href="./index.html" class="nav-link"><li>Find Freelancer</li></a>
+          <a href="" class="nav-link"><li>FAQ</li></a>
+          <a href="./testimonials.html" class="nav-link"
+            ><li>Clients Feedback</li></a
+          >
+        </ul>
+        <div class="btn">
+          <button class="join-btn">Join our community</button>
+        </div>
+      </nav>
+      <button class="hamburger">
+        <img class="nav-show" src="./src/img/icons/mobile-nav.png" alt="" />
+        <img class="cancel" src="./src/img/icons/cancel.png" alt="" />
+      </button>
+    </header>
+    <!-- ======================
+    ========= BANNER SECTION ========= 
+            ====================== -->
+    <section class="banner">
+      <div class="introduction">
+        <div class="text">
+          <div class="head-title">
+            <h1>Featured FreeLancers</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================
+    ========= Top Rated SECTION ========= 
+            ====================== -->
+    <section class="top-rated">
+      <div class="text">
+        <div class="heading">
+          <h1>Top Rated Freelancers</h1>
+        </div>
+      </div>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Skill</th>
+          <th>Country</th>
+          <th>Contact</th>
+        </tr>
+        <tr class="free">
+          <td>Edwin Simo</td>
+          <td>Software Engineer</td>
+          <td>Romania</td>
+          <td><a href="mailto:sample@mail.com">Send Mail</a></td>
+        </tr>
+
+        <tr class="free">
+          <td>Sarah O'corner</td>
+          <td>Architect</td>
+          <td>U.S.A</td>
+          <td><a href="mailto:sample@mail.com">Send Mail</a></td>
+        </tr>
+        <tr class="free">
+          <td>Victor Mcfair</td>
+          <td>Graphic Designer</td>
+          <td>U.K</td>
+          <td><a href="mailto:sample@mail.com">Send Mail</a></td>
+        </tr>
+        <tr class="free">
+          <td>Mercy Freco</td>
+          <td>Web Designer</td>
+          <td>France</td>
+          <td><a href="mailto:sample@mail.com">Send Mail</a></td>
+        </tr>
+        <tr class="free">
+          <td>Caroline Veroso</td>
+          <td>Fashion Designer</td>
+          <td>Russia</td>
+          <td><a href="mailto:sample@mail.com">Send Mail</a></td>
+        </tr>
+      </table>
+    </section>
+    <section class="freelancers">
+      <div class="text">
+        <div class="heading">
+          <h1>Most Searched</h1>
+        </div>
+      </div>
+      <div class="collection">
+        <div class="card">
+          <div class="card-img">
+            <img src="./src/img/ed.png" alt="" />
+          </div>
+          <div class="text">
+            <div class="user">
+              <h4>Edwin Simo</h4>
+              <span class="faded">Software Engineer</span>
+              <div class="description">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Placeat inventore voluptas delectus, est possimus tempora
+                  repellendus iusto esse, corrupti labore soluta sit repellat
+                  alias tempore quas deleniti deserunt quos impedit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="btns">
+            <button class="btn view">View Portfolio</button>
+            <button class="btn me">Contact Me</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./src/img/testimonials/team-9.png" alt="" />
+          </div>
+          <div class="text">
+            <div class="user">
+              <h4>Traversy Micheal</h4>
+              <span class="faded">Software Engineer</span>
+              <div class="description">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Placeat inventore voluptas delectus, est possimus tempora
+                  repellendus iusto esse, corrupti labore soluta sit repellat
+                  alias tempore quas deleniti deserunt quos impedit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="btns">
+            <button class="btn view">View Portfolio</button>
+            <button class="btn me">Contact Me</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./src/img/testimonials/team-5.png" alt="" />
+          </div>
+          <div class="text">
+            <div class="user">
+              <h4>Temio Sempaio</h4>
+              <span class="faded">App Developer</span>
+              <div class="description">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Placeat inventore voluptas delectus, est possimus tempora
+                  repellendus iusto esse, corrupti labore soluta sit repellat
+                  alias tempore quas deleniti deserunt quos impedit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="btns">
+            <button class="btn view">View Portfolio</button>
+            <button class="btn me">Contact Me</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./src/img/testimonials/team-9.png" alt="" />
+          </div>
+          <div class="text">
+            <div class="user">
+              <h4>Dominika Fred</h4>
+              <span class="faded">Data Analyst</span>
+              <div class="description">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Placeat inventore voluptas delectus, est possimus tempora
+                  repellendus iusto esse, corrupti labore soluta sit repellat
+                  alias tempore quas deleniti deserunt quos impedit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="btns">
+            <button class="btn view">View Portfolio</button>
+            <button class="btn me">Contact Me</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./src/img/testimonials/team-5.png" alt="" />
+          </div>
+          <div class="text">
+            <div class="user">
+              <h4>Mark Benham</h4>
+              <span class="faded">Makeup Specialist</span>
+              <div class="description">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Placeat inventore voluptas delectus, est possimus tempora
+                  repellendus iusto esse, corrupti labore soluta sit repellat
+                  alias tempore quas deleniti deserunt quos impedit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="btns">
+            <button class="btn view">View Portfolio</button>
+            <button class="btn me">Contact Me</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="view-more">
+      <div class="btns">
+        <button class="btn view">More</button>
+      </div>
+    </div>
+    <!-- ======================
+    ========= ------FOOTER----- ========= 
+            ====================== -->
+    <footer class="foot">
+      <div class="signing-up">
+        <div class="text">
+          <div class="title"><h1>Sign up to our newsletter</h1></div>
+          <div class="paragraph">
+            <p>
+              Recieve latest news, updates, and many other <br />
+              things every week
+            </p>
+          </div>
+        </div>
+        <div class="input">
+          <input type="text" placeholder="Enter your email address" />
+          <div class="arrow"><i class="fa fa-angle-right"></i></div>
+        </div>
+      </div>
+      <div class="links">
+        <ul class="lists">
+          <h4>Resources</h4>
+          <a class="item" href=""><li>Download</li></a>
+          <a class="item" href=""><li>Help Centre</li></a>
+          <a class="item" href=""><li>Guide Book</li></a>
+          <a class="item" href=""><li>App Directory</li></a>
+        </ul>
+        <ul class="lists community">
+          <h4>Community</h4>
+          <a class="item" href=""><li>Why Plikso</li></a>
+          <a class="item" href=""><li>Enterprise</li></a>
+          <a class="item" href=""><li>Customer Stories</li></a>
+          <a class="item" href=""><li>Instagram Post</li></a>
+        </ul>
+        <ul class="lists company">
+          <h4>Company</h4>
+          <a class="item" href=""><li>Community</li></a>
+          <a class="item" href=""><li>About Freelo</li></a>
+          <a class="item" href=""><li>Success</li></a>
+          <a class="item" href=""><li>Information</li></a>
+        </ul>
+        <div class="contact">
+          <h3>Get in Touch</h3>
+          <p>
+            Feel free to get in touch with <br />
+            us via email
+          </p>
+          <div class="mail">
+            <a href="mailto:teca@gmail.com">teca@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="credit">
+        <div class="company">
+          <h4>TECA</h4>
+        </div>
+        <div class="navigations-links">
+          <ul class="n-links">
+            <a href="#" class="link"><li>Contact</li></a>
+            <a href="#" class="link"><li>Feedback</li></a>
+            <a href="#" class="link"><li>Join our stack</li></a>
+            <a href="#" class="link"><li>Terms</li></a>
+          </ul>
+        </div>
+        <div class="social-links">
+          <ul>
+            <div class="social-link"><i class="fa fa-facebook"></i></div>
+            <div class="social-link"><i class="fa fa-instagram"></i></div>
+            <div class="social-link"><i class="fa fa-twitter"></i></div>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./src/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+  .cancel {
+    transform: rotate(45deg);
+    display: none;
+    animation: cancel 0.5s linear;
+  }
+}
+td {
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+  }
+}
+.empty {
+  height: 30vh;
+}
+a {
+  text-decoration: none;
+  color:  #ddc09b;
+}
+.img {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@import "body";
+@import "responsiveness";
+@import "animations";
